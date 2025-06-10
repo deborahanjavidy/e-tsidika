@@ -1,0 +1,577 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px #000;
+  background: rgb(0, 0, 0);
+}
+
+#chk1 {
+  display: none;
+}
+
+i {
+  color: #fff;
+  cursor: pointer;
+}
+
+header .logo {
+  flex: 1;
+  color: #fff;
+  margin-left: -3.5rem;
+}
+
+header .search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  border-radius: 30px;
+  color: gray;
+  font-size: 16px;
+  text-align: center;
+}
+
+.search-box button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0.9);
+  background: rgb(28, 222, 28);
+}
+
+header ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+header ul li a:hover {
+  border-bottom: 2px solid cadetblue;
+}
+
+header .menu {
+  font-size: 2.5rem;
+  display: none;
+}
+
+.bg {
+  background: url(../hackaaaa/img1.wallspic.com-atmosphere-mathematique-la_purete_de_la_couleur-purple-liquid-3840x2160.png) no-repeat;
+  height: 80vh;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.tg {
+  padding: 8rem;
+  line-height: 1.5;
+}
+
+.titre {
+  text-align: left;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 2rem;
+}
+
+p {
+  color: white;
+}
+
+.touche {
+  width: 8rem;
+  height: 2.5rem;
+  color: rgb(226, 219, 224);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+/* Appliquer l'animation au survol */
+.touche:hover {
+  animation: bounce 0.5s ease;
+}
+
+.touche:hover {
+  background-color: rgb(9, 102, 9);
+  transition: 0.3s;
+  border: none;
+}
+
+.point button {
+  text-decoration: none;
+  color: rgb(20, 19, 19);
+  font-size: 1rem;
+  font-family: cursive;
+  margin-top: 3rem;
+  margin: auto;
+}
+
+footer {
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+}
+
+.socials li {
+  list-style: none;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+.boutique {
+  text-align: center;
+  padding: 20px;
+}
+
+.video {
+  align-items: center;
+}
+
+#myVideo {
+  width: 80%;
+  height: auto;
+  margin-left: 7rem;
+  border-radius: 5px;
+}
+
+.boutique h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.product {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product-images {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.alt-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.buy-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-left: 4.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #e65550;
+}
+
+.buy-button i {
+  margin-right: 5px;
+}
+
+.fav-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffda6f;
+  color: #333;
+  padding: 10px 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.fav-button:hover {
+  background-color: #e5c655;
+}
+
+.fav-button i {
+  margin-right: 5px;
+}
+
+.delivery-info {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+}
+
+.related-products {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.related-products h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product-suggestion {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+  text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+  background: #6762ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url();
+}
+
+.container form {
+  width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(70, 63, 63, 0.1);
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+}
+
+.SD {
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+input {
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #dbd2d2;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #dfd4d4;
+}
+
+input::placeholder {
+  color: #9f9a9a;
+}
+
+#lastName, form #mobile {
+  margin-left: 20px;
+}
+
+form h4 {
+  color: #fff;
+  font-weight: 300;
+  width: 600px;
+  margin-top: 20px;
+}
+
+textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  color: #dbd2d2;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(194, 194, 194);
+}
+
+.click {
+  border: none;
+  background: rgb(117, 187, 10);
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #b8b8b8;
+  width: 100px;
+  padding: 0;
+  margin-right: 500px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.click:hover {
+  background: white;
+}
+
+.back {
+  background: rgba(0, 0, 0, 0.903);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Fond sombre */
+  color: #ffffff; /* Texte en blanc */
+  margin: 0;
+  padding: 20px;
+}
+
+.containere {
+  max-width: 600px;
+  margin: auto;
+  background: #121111; /* Fond sombre pour le chat */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* Titre en blanc */
+}
+
+.chatbox {
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #121111; /* Fond sombre pour la zone de chat */
+  scrollbar-width: none; /* Pour Firefox */
+  -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+}
+
+.chatbox::-webkit-scrollbar {
+  display: none; /* Pour Chrome, Safari et Opera */
+}
+
+.message {
+  margin: 10px 0;
+}
+
+.user {
+  text-align: right;
+  color: #ffffff;
+}
+
+.ia {
+  text-align: left;
+  color: #dddddd;
+}
+
+#user-input[type=text] {
+  width: calc(100% - 110px);
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+.message {
+  font-family: monospace; /* Police type machine à écrire */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Cache le texte qui dépasse */
+  border-right: 2px solid black; /* Curseur de machine à écrire */
+  width: 0; /* Démarre avec une largeur de 0 */
+  animation: typing 2s steps(40, end) forwards, blink-caret 0.35s step-end infinite;
+}
+
+/* Animation pour révéler le texte lettre par lettre */
+@keyframes typing {
+  from {
+    width: 0;
+  } /* Démarre avec une largeur de 0 */
+  to {
+    width: 100%;
+  } /* Finit avec la largeur totale du texte */
+}
+/* Animation pour le clignotement du curseur */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+.message.ia {
+  width: 100%; /* Largeur du conteneur */
+  max-width: 600px; /* Largeur maximale */
+  overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
+  white-space: pre-wrap; /* Permet au texte de passer à la ligne */
+  word-wrap: break-word; /* Force le texte à passer à la ligne si nécessaire */
+  margin-left: 2rem;
+}
+
+/* Style pour le conteneur des messages */
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: right; /* Les messages sont empilés en colonne */
+  padding: 10px;
+}
+
+/* Style pour les messages de l'utilisateur */
+.message.user {
+  border: solid #26292c; /* Fond bleu clair pour les messages utilisateur */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 10px 15px; /* Espacement interne */
+  max-width: 40%; /* Largeur maximale du message */
+  margin: 10px 0 10px 300px; /* Espacement vertical entre les messages */
+  position: relative;
+  text-align: left;
+  align-items: flex-end;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+  white-space: pre-wrap; /* Permet au texte de passer à la ligne */
+  word-wrap: break-word;
+}
+
+/*# sourceMappingURL=style.css.map */

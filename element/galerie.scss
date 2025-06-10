@@ -1,0 +1,115 @@
+.boutique {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .video{
+    align-items: center;
+  }
+  #myVideo{
+    width: 80%;
+    height: auto;
+    margin-left: 7rem;
+    border-radius: 5px;
+  }
+  .boutique h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-images {
+    position: relative;
+  }
+  
+  .main-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .alt-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .buy-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-left: 4.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-button:hover {
+    background-color: #e65550;
+  }
+  
+  .buy-button i {
+    margin-right: 5px;
+  }
+  
+  .fav-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffda6f;
+    color: #333;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+  }
+  
+  .fav-button:hover {
+    background-color: #e5c655;
+  }
+  
+  .fav-button i {
+    margin-right: 5px;
+  }
+  
+  .delivery-info {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .related-products {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .related-products h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .product-suggestion {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+  }
+  
